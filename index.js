@@ -11,14 +11,14 @@ function renderTime() {
             $('#time').text(datetime)
         })
 }
-// 명언
+//명언
 function renderQuote() {
     let url = `https://api.quotable.io/random`
     fetch(url)
         .then(res => res.json()).then((data) => {
-            let content = `" ${date['content']} "`
-            let author = `- ${date['author']} -`
-            $('#content').Text(content)
-            $('#author').Text(author)
+            let content = `" ${data['content']} "`
+            let author = `- ${data['author']} -`
+            $('#content').text(content)
+            $('#author').text(author)
         })
 }
