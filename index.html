@@ -1,98 +1,84 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:title" content="박나연의 링크 모음" />
-        <meta property="og:description" content="어서와 코딩은 처음이지?" />
-        <meta property="og:image" content="20220815_130402.jpg" />
-        <title>내 링크 모음</title>
-        <style>
-            @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-            * {
-                font-family: "Pretendard",serif;
-            }
-            body {
-                background-color: #44398A;
-            }
-            .profile {
-                width: 100px;
-                height: 100px;
+<html lang="en">
 
-                border-radius: 100%;
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>나만의 동기부여 홈화면 만들기</title>
 
-                border: 2px solid white;
+    <script src="index.js"></script>
 
-                background-image: url(20220815_130402.jpg);
-                background-position: center;
-                background-size: cover;
-            }
-            .main {
-                color: white;
-                font-size: 20px;
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-                margin-top: 30px;          
-                margin-bottom: 10px;
-            }
-            .sub {
-                color: white;
-                font-size: 14px;
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
 
-                margin-top: 0px;
-                margin-bottom: 30px;
-            }
-            .wrap {
-                width: 300px;
-                margin: 30px auto 0px auto;
+        body {
+            background-image: url("https://images.unsplash.com/photo-1666065988253-3ad95ca4404f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+            background-position: center;
 
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            .wrap > a {
-                width: 300px;
-                height: 50px;
+            color: white;
+        }
+        
+        .time {
+            font-size: 80px;
+            font-weight: bold;
+        }
 
-                background-color: white;
-                border-radius: 8px;
+        .greeting {
+            font-size: 50px;
+        }
 
-                margin-bottom: 10px;
+        .todo {
+            font-size: 30px;
+        }
 
-                font-size: 14px;
-                font-weight: bold;
-                color: #44398A;
+        .author {
+            font-size: 25pt;
+            font-style: italic;
+        }
 
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+        .main {
+            width: 100vw;
+            height: 80vh;
 
-                text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 
-                box-shadow: 3px 3px 5px 0px black;
+        .quote {
+            width: 100vw;
+            height: 20vh;
 
-            }
-            .wrap > a:hover {
-                background-color: #f2f2f2;
-            }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 
-        </style>
-    </head>
-    <body>
-        <div class="wrap">
-            <div class="profile"></div>
-            <h1 class="main">박나연</h1>
-            <p class="sub">코딩..배우는 중입니다</p>    
-            <a target="_blank" href="https://www.instagram.com/dives_nayeon/">인스타그램</a>
-            <a target="_blank" href="https://www.tistory.com/member/blog">티스토리</a>  
-            <a target="_blank" href="https://story.kakao.com/_KDFVn">카카오스토리</a>
-            <a target="_blank" href="https://spartacodingclub.kr/">스파르타코딩클럽</a>
-            <a target="_blank" href="https://ddingdong.spartacodingclub.kr/">띵동코딩</a>  
-            <a target="_blank" href="https://hanghae99.spartacodingclub.kr/">항해99</a>
-            <a target="_blank" href="https://chang.spartacodingclub.kr/">창업 부트캠프 창</a>
-            <a target="_blank" href="https://github.com/nayeonpark202210/mypage">깃허브</a>  
-        </div>
-    </body>
+    </style>
+
+    <script>
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div id="time" class="time">12:00</div>
+        <div class="greeting">hello, Yungsang!</div>
+        <div class="todo">매일 20분 산책하기</div>
+    </div>
+    <div class="quote">
+        <div id="author" class="author">- 명언의 저자 -</div>
+        <div id="content" class="content">" 명언의 내용 "</div>
+    </div>
+</body>
+
 </html>
